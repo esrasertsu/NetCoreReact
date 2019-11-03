@@ -1,9 +1,6 @@
-﻿using CleanArchitecture.Domain;
-using CleanArchitecture.Persistence;
+﻿using CleanArchitecture.Persistence;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
