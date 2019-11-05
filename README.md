@@ -18,7 +18,7 @@ with CQRS + MediatR pattern implementing. <br>
 For both UI and backend side: <br>
 from cmd or terminal  <br>
 cd client <br>
-npm run <br>
+npm start <br>
  <br>
 another cmd or terminal tab <br>
 cd CleanArchitecture.API  <br>
