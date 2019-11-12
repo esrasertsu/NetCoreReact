@@ -1,8 +1,9 @@
-import React, { useState , useEffect} from 'react';
-import { Header, Icon, List } from 'semantic-ui-react';
+import React, { useState , useEffect, Fragment} from 'react';
+import { Header, Icon, List, Container } from 'semantic-ui-react';
 import axios from 'axios';
 import { IActivity } from '../models/activity';
 import NavBar from '../../features/nav/NavBar';
+import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
 
 const App = () => {
     const [activities, setActivities] = useState<IActivity[]>([]);
@@ -14,21 +15,14 @@ const App = () => {
     },[]); //[] provides the same functionality with componentDidMounth.. 
 
 
-        return (
-            <div className="App">
+    return (
+        <Fragment>
                 <NavBar />
-                <Header as='h2'>
-                    <Icon name='users' />
-                    <Header.Content>Reactivities</Header.Content>
-                </Header>
-                <List>
-                        {activities.map((activity) => (
-                            <List.Item key={activity.id}>{activity.title}</List.Item>
-                        ))}
-                </List>
-                   
-               
-            </div>
+            <Container style={{ marginTop: '5em' }}>
+                <ActivityDashboard activities={activities} />
+                </Container>  
+
+        </Fragment>
         );
     
   

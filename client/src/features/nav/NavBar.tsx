@@ -6,7 +6,7 @@ const NavBar = () => {
         <Menu fixed="top" inverted>
             <Container>
                 <Menu.Item header>
-                    <img src="/assets/logo512.png" alt="logo"/>
+                    <img src="/assets/logo512.png" alt="logo" style={{ marginRight: '10px', marginLeft:'-1.14em' }} />
                     Reactivity
                 </Menu.Item>
                 <Menu.Item name='activities' />
@@ -14,9 +14,8 @@ const NavBar = () => {
                     <Button positive content="Create Activity"/>
                 </Menu.Item>
             </Container>
-        </Menu>
-        
-        )
+        </Menu>       
+    )
 }
 
 export default NavBar
