@@ -22,7 +22,7 @@ const ActivityList: React.FC<IProps> = ({ activities, selectActivity }) => {
                             </Item.Description>
                             <Item.Extra>
                                 <Button onClick={() => selectActivity(activity.id)} floated='right' content='View' color='blue' />
-                                <Label basic content='Category' />
+                                <Label basic>{activity.category}</Label>
                             </Item.Extra>
                         </Item.Content>
                     </Item>
